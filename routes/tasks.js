@@ -7,7 +7,7 @@ router.post('/', taskController.addTask);
 router.get('/', taskController.getTask);
 router.put('/:id', taskController.updateTaskById);
 router.delete('/:id', taskController.deleteTaskById);
-router.get('/:status', taskController.getTaskByCategory);
+router.get('/:status', taskController.getTaskByStatus);
 router.delete('/status/:status', taskController.deleteMultipleTaskBycategory);
 
 

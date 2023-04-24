@@ -8,7 +8,7 @@ var indexRouter = require('./routes/index');
 var tasksRouter = require('./routes/tasks');
 require('dotenv').config();
 const mongodbUrl=process.env.MongoDBUrl;
-console.log("mongodbUrl",mongodbUrl);
+
 var app = express();
 mongoose.connect(mongodbUrl, { useNewUrlParser: true })
   .then(() => console.log('Connected to MongoDB'))
